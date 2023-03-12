@@ -28,8 +28,11 @@ I appreciate thoughtful and user-friendly sites, with good UX design, sites that
 * Figma, Photoshop, Illustrator
 
 ## Code Example
--
+
 ```
+function sayHi() {
+	alert("Hello, World!")
+}
 ```
 
 ## Experience
