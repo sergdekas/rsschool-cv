@@ -10,7 +10,7 @@
 
 ## About Me
 
-I am an HTML coder and a beginner front-end developer. I do (specialize in) web page layout for static sites, landing pages, layout layout for CMS with subsequent landing, and I also do HTML layout of e-mail letters.
+I am an HTML coder and a beginner front-end developer. I do (specialize in) web page layout for static sites, landing pages, layout for CMS with subsequent landing, and I also do HTML layout of e-mail letters.
 
 I love beautiful and lightweight websites with a clean and minimalistic design, smart and responsive JS animation, created in compliance with the rules of semantic layout.
 
