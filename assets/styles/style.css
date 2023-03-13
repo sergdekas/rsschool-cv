@@ -1,0 +1,73 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #292929;
+}
+
+h1 {
+  letter-spacing: -1px;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 43rem;
+  margin: 0 auto;
+}
+
+.wrapper {
+  border-bottom: 0.75rem solid rgb(32, 89, 212);
+  margin-bottom: 2rem;
+}
+
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+
+  padding: 2rem 0 1rem 0;
+}
+
+.code {
+  font-family: Consolas,"courier new";
+  line-height: 1.75rem;
+  color: #333333;
+
+  background-color: #f1f1f1;
+  border-radius: 0.5rem;
+
+  padding: 2px;
+  margin: 0 auto;
+}
+
+.education-item__group {
+  margin-bottom: 0.5rem;
+}
+
+.footer-main {
+  padding: 0.75rem 0;
+  margin-top: 3rem;
+  background-color: rgb(32, 89, 212);
+  text-align: left;
+}
+
+.footer-year {
+  font-size: 1rem;
+  color: #f1f1f1;
+}
+
+.hidden {
+  display: none;
+}
