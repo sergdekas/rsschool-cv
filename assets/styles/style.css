@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background-color: #FFFDFD;
+	background-color: #fff;
 }
 
 h2 {
@@ -98,16 +98,18 @@ h2 {
 	margin: 0;
 	width: 16rem;
 	color: var(--color-second);
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: 400;
-	line-height: 2.375rem;
+	line-height: 1.875rem;
 	letter-spacing: -0.04rem;
 	text-transform: uppercase;
 }
 
 .btn {
-	padding: 1.25rem 1.5rem;
+	padding: 0.875rem 1.5rem;
 	color: #ffffff;
+	font-size: 1rem;
+	text-transform: uppercase;
 	text-decoration: none;
 	background-color: var(--color-accent);
 	border-radius: 3.125rem;
@@ -182,7 +184,17 @@ ul {
 	border: none;
 }
 
+.projects {
+	background-color: #fafafa;
+	margin-bottom: 3rem;
+}
+
+.projects > h2 {
+	margin-left: 3rem;
+}
+
 .project-item {
+	margin: 0 2rem;
 	display: flex;
 	justify-content: space-between;
 	background-color: #fff;
@@ -197,7 +209,7 @@ ul {
 
 .project-item:hover {
 	box-shadow: 0 4px 8px 0 var(--color-light), 0 6px 20px 0 var(--color-light);
-	transition: 700ms;
+	transition: 500ms;
 }
 
 .project-title {
@@ -244,5 +256,24 @@ ul {
 }
 
 .footer--year {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	color: var(--color-light);
+}
+
+.footer--rss-link {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+}
+
+.col-f-33 {
+	width: 33%;
+}
+
+/* Add */
+
+:not(pre)>code[class*=language-],pre[class*=language-] {
+	border-radius: 15px;
 }
