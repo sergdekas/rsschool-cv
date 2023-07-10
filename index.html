@@ -4,73 +4,162 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Kasianov CV RS_School</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/styles/normalize.css">
 	<link rel="stylesheet" href="assets/styles/style.css">
+	<link rel="stylesheet" href="assets/styles/prism.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/styles/atom-one-light.min.css">
+	<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/highlight.min.js"></script>
 </head>
 <body>
-	<div class="container">
-		<div class="wrapper">
-			<header class="header-main"><img class="avatar-logo" src="assets/git_avatar.png" alt="my-avatar" width="50" height="50">
-			<h1 class="header-title">Sergei Kasianov</h1>
-			</header>
+	<header class="header-main">
+		<div class="container">
+			<div class="flex-wrapper">
+				<img class="avatar-logo" src="assets/images/logo.svg" alt="my-avatar" width="52" height="52">
+			
+			<nav class="main-nav">
+				<ul class="main-nav__menu">
+					<li class="main-nav__menu-item">
+						<a class="main-nav__menu-item-link" href="#about-me">About Me</a></li>
+					<li class="main-nav__menu-item">
+						<a class="main-nav__menu-item-link" href="#skills">Skills</a></li>
+					<li class="main-nav__menu-item">
+						<a class="main-nav__menu-item-link" href="#contacts">Contacts</a></li>
+				</ul>
+			</nav>
+			</div>
+		
 		</div>
-		<h2>Contacts</h2>
-		<ul>
-		  <li><b>Location:</b> Novi Sad, Serbia</li>
-		  <li><b>Phone:</b> 0613066391</li>
-		  <li><b>Email:</b> webvakula@gmail.com</li>
-		  <li><b>GitHub:</b> <a href="https://github.com/sergdekas">sergdekas</a></li>
-		</ul>
-		<h2>About Me</h2>
-		<p>I am an HTML coder and a beginner front-end developer. I do (specialize in) web page layout for static sites, landing pages, layout layout for CMS with subsequent landing, and I also do HTML layout of e-mail letters.</p>
-		<p>I love beautiful and lightweight websites with a clean and minimalistic design, smart and responsive JS animation, created in compliance with the rules of semantic layout.</p>
-		<p>I appreciate thoughtful and user-friendly sites, with good UX design, sites that are useful for users.</p>
-		<h2>Skills</h2>
-		<ul>
-		  <li>HTML</li>
-		  <li>CSS</li>
-		  <li>BEM</li>
-		  <li>JavaScript (Basic)</li>
-		  <li>PHP (Basic)</li>
-		  <li>Git, GitHub</li>
-		  <li>VS Code, Sublime Text</li>
-		  <li>Figma, Photoshop, Illustrator</li>
-		</ul>
-		<h2>Code Example</h2>
-		<div class="code">
-<pre><code>
-	function sayHi() {
-		  alert("Hello, World!")
-	}
-</code>
-</pre>
+	</header>
+
+	<main>
+		<div class="container">
+			<section class="hero">
+				<div class="flex-wrapper-reverse">
+					<div class="hero-text">
+						<h1 class="hero-title">Sergei Kasianov</h1>
+						<p class="hero-subtitle">Frontend Web&nbsp;Developer</p>
+						<a href="https://github.com/sergdekas" class="btn">Visit my GitHub</a>
+					</div>
+					<div class="image">
+						<img src="assets/images/photo_410.png" alt="photo Sergei">
+					</div>
+				</div>
+			</section>
+
+
+			<section class="about-me" id="about-me">
+				<h2>About Me</h2>
+					<p>I am an HTML coder and a beginner front-end developer. I do (specialize in) web page layout for static sites, landing pages, layout for CMS with subsequent landing, and I also do HTML layout of e-mail letters.</p>
+					<p>I love beautiful and lightweight websites with a clean and minimalistic design, smart and responsive JS animation, created in compliance with the rules of semantic layout.</p>
+					<p>I appreciate thoughtful and user-friendly sites, with good UX design, sites that are useful for users.</p>
+			</section>
+
+			<section class="contacts" id="contacts">
+				<h2>Contacts</h2>
+					<ul>
+						<li><b>Location:</b> Novi Sad, Serbia</li>
+						<li><b>Phone:</b> 0613066391</li>
+						<li><b>Email:</b> webvakula@gmail.com</li>
+						<li><b>GitHub:</b> <a href="https://github.com/sergdekas">sergdekas</a></li>
+					</ul>
+			</section>
+
+			<section class="skills" id="skills">
+				<h2>Skills</h2>
+					<ul class="skills-list">
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>BEM</li>
+						<li>JavaScript (Basic)</li>
+						<li>PHP (Basic)</li>
+						<li>Git, GitHub</li>
+						<li>VS Code, Sublime Text</li>
+						<li>Figma, Photoshop, Illustrator</li>
+					</ul>
+			</section>
+			
+			<section class="code">
+				<h2>Code Example</h2>
+					<pre class="line-numbers"><code class="language-javascript" data-prismjs-copy="Сopy me"
+					data-prismjs-copy-success="I've been copied!" >
+function sayHi() {
+	alert("Hello, World!");
+}
+
+function multiply(a, b) {
+  return a * b;
+}
+						</code></pre>
+			</section>
+
+			<section class="education">
+				<h2>Education</h2>
+					<ul>
+						<li class="education-item__group"><b>University:</b> Perm National Research Polytechnic University, Civil Engineering Faculty, Civil Engineering major</li>
+						<li class="education-item__group"><b>Courses:</b>
+								<ul class="education-list__second">
+									<li><a href="https://www.htmlacademy.ru" rel="nofollow, noindex"> HTML Academy: front-end developer ↗︎</a> — in the learning process</li>
+									<li><a href="https://code-basics.com/ru/languages/php" rel="nofollow, noindex"> Code-Basics by Hexlet: PHP (Basics) ↗︎</a></li>
+									<li><a href="https://code-basics.com/ru/languages/html" rel="nofollow, noindex"> Code-Basics by Hexlet: HTML ↗︎</a></li>
+									<li><a href="https://code-basics.com/ru/languages/css" rel="nofollow, noindex"> Code-Basics by Hexlet: CSS ↗︎</a></li>
+									<li><a href="https://ru.hexlet.io/courses/layout-designer-basics" rel="nofollow, noindex"> Hexlet: Basics of modern layout designer ↗︎</a></li>
+									<li><a href="https://ru.hexlet.io/courses/intro_to_git" rel="nofollow, noindex"> Hexlet: Introduction to Git ↗︎</a></li>
+									<li><a href="https://ru.hexlet.io/courses/cli-basics" rel="nofollow, noindex"> Hexlet: Command line basics ↗︎</a></li>
+								</ul>
+						</li>
+					</ul>
+			</section>
+
+			<section class="languages">
+				<h2>Languages</h2>
+					<ul>
+						<li>English: A2 (Pre-Intermediate)</li>
+						<li>Russian: Native</li>
+						<li>Serbian: Basic</li>
+					</ul>
+			</section>
+
+			<section class="projects">
+				<h2>Projects</h2>
+				<a href="https://sergdekas.github.io/rsschool-cv/" class="project-item--link">
+					<div class="project-item">
+						<div class="project-text">
+							<h3 class="project-title">CV HTML Page</h3>
+							<p class="project-description">Rolling Scope School (study project)</p>
+						</div>
+						<img class="icon-arrow" src="assets/images/arrow.svg" alt="arrow">
+					</div>
+				</a>
+			</section>
+
 		</div>
-		<h2 class="hidden">Experience</h2>
-		<h2>Education</h2>
-		<ul>
-		  <li class="education-item__group"><b>University:</b> Perm National Research Polytechnic University, Civil Engineering Faculty, Civil Engineering major</li>
-		  <li class="education-item__group"><b>Courses:</b>
-		      <ul class="education-list__second">
-		        <li><a href="https://www.htmlacademy.ru" rel="nofollow, noindex"> HTML Academy: front-end developer</a> - in the learning process</li>
-		        <li><a href="https://code-basics.com/ru/languages/php" rel="nofollow, noindex"> Code-Basics by Hexlet: PHP (Basics)</a></li>
-		        <li><a href="https://code-basics.com/ru/languages/html" rel="nofollow, noindex"> Code-Basics by Hexlet: HTML</a></li>
-		        <li><a href="https://code-basics.com/ru/languages/css" rel="nofollow, noindex"> Code-Basics by Hexlet: CSS</a></li>
-		        <li><a href="https://ru.hexlet.io/courses/layout-designer-basics" rel="nofollow, noindex"> Hexlet: Basics of modern layout designer</a></li>
-		        <li><a href="https://ru.hexlet.io/courses/intro_to_git" rel="nofollow, noindex"> Hexlet: Introduction to Git</a></li>
-		        <li><a href="https://ru.hexlet.io/courses/cli-basics" rel="nofollow, noindex"> Hexlet: Command line basics</a></li>
-		      </ul>
-		  </li>
-		</ul>
-		<h2>Languages:</h2>
-		<ul>
-		  <li>English: A2 (Pre-Intermediate)</li>
-		  <li>Russian: Native</li>
-		  <li>Serbian: Basic</li>
-		</ul>
-	</div>
+
+	</main>
+
 	<footer class="footer-main">
 		<div class="container">
-			<div class="footer-year">© 2023</div>
+			<div class="flex-wrapper">
+				<div>
+					<a class="footer--github-link" href="http://github.com/sergdekas">
+						<img src="assets/images/github-white.svg" alt="github logo" width="52" height="52"><span>Visit my GitHub</span>
+					</a>
+				</div>
+				
+				<div class="footer--year">© 2023</div>
+
+				<div>
+					<a class="footer--rss-link" href="https://rs.school/js/">
+						<img src="assets/images/rs_school_js_white.svg" alt="RS_School logo" width="95" height="35">
+					</a>
+				</div>
+			</div>
 		</div>
 	</footer>
+
+	<script>hljs.initHighlightingOnLoad();</script>
+	<script src="assets/scripts/prism.js"></script>
 </body>
 </html>
