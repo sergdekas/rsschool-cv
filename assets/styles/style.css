@@ -1,0 +1,279 @@
+:root {
+	--color-first: #333333;
+	--color-second: #666666;
+	--color-accent: #175ADD;
+	--color-bg: #F2F3F6;
+	--color-light: #F6F6F6;
+}
+
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Inter', 'Arial', sans-serif;
+	color: var(--color-first);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #fff;
+}
+
+h2 {
+	color: var(--color-accent);
+	font-size: 2.25rem;
+	font-weight: 500;
+	line-height: 2.25rem;
+	letter-spacing: -0.0675rem;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 1rem;
+	margin: 0 auto;
+}
+
+/* HEADER */
+
+.header-main {
+	padding: 1.75rem 0;
+}
+
+.main-nav__menu {
+	margin: 0;
+	padding: 1.125rem 2.875rem;;
+	display: flex;
+	gap: 2.625rem;
+	border-radius: 3.125rem;
+	background: var(--color-bg);
+}
+
+.main-nav__menu-item {
+	list-style-type: none;
+}
+
+.main-nav__menu-item-link {
+	text-decoration: none;
+	font-weight: 500;
+	color: var(--color-first);
+}
+
+.main-nav__menu-item-link:hover {
+	color: var(--color-accent);
+	transition: 300ms;
+}
+
+
+/* HERO */
+
+.flex-wrapper-reverse {
+	display: flex;
+	flex-wrap: wrap-reverse;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.hero-text {
+	width: fit-content;
+	margin: 0 0 4rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	align-items: start;
+}
+
+.hero-title {
+	margin-bottom: 0;
+	font-family: Inter;
+	font-size: 4rem;
+	font-weight: 700;
+	line-height: 4rem;
+	letter-spacing: -0.08rem;
+	text-transform: uppercase;
+}
+
+.hero-subtitle {
+	margin: 0;
+	width: 16rem;
+	color: var(--color-second);
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 1.875rem;
+	letter-spacing: -0.04rem;
+	text-transform: uppercase;
+}
+
+.btn {
+	padding: 0.875rem 1.5rem;
+	color: #ffffff;
+	font-size: 1rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: var(--color-accent);
+	border-radius: 3.125rem;
+}
+
+.btn:hover {
+	background-color: #1B65F6;
+	transition: 300ms;
+}
+
+.image img{
+	min-width: 100px;
+}
+
+/* MAIN */
+
+section {
+	margin-bottom: 1.5rem;
+	font-size: 1.25rem;
+	line-height: 2rem;
+}
+
+section {
+	padding: 2.625rem;
+	border: 1px solid var(--color-bg);
+	border-radius: 30px;
+}
+
+section h2 {
+	margin-top: 0;
+	margin-bottom: 2rem;
+}
+
+ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+}
+
+.skills-list li {
+	margin: 0.5rem 0;
+}
+
+
+.education-item__group {
+	margin-top: 1.15rem;
+	list-style-type: none;
+}
+
+.education-list__second {
+	margin-top: 0.5rem;
+}
+
+.education-list__second li {
+	margin: 0.5rem 0;
+}
+
+.education-list__second a {
+	color: var(--color-accent);
+	text-decoration: none;
+}
+
+.education-list__second a:hover {
+	text-decoration: underline;
+	transition: 500ms;
+}
+
+.hero,
+.projects {
+	padding-left: 0;
+	padding-right: 0;
+	border: none;
+}
+
+.projects {
+	background-color: #fafafa;
+	margin-bottom: 3rem;
+}
+
+.projects > h2 {
+	margin-left: 3rem;
+}
+
+.project-item {
+	margin: 0 2rem;
+	display: flex;
+	justify-content: space-between;
+	background-color: #fff;
+	padding: 2.625rem;
+	border: 1px solid var(--color-bg);
+	border-radius: 15px;
+}
+
+.project-item--link {
+	text-decoration: none;
+}
+
+.project-item:hover {
+	box-shadow: 0 4px 8px 0 var(--color-light), 0 6px 20px 0 var(--color-light);
+	transition: 500ms;
+}
+
+.project-title {
+	margin: 0;
+	margin-bottom: 1rem;
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: 1.25rem;
+	letter-spacing: -0.0375rem;
+}
+
+.project-description {
+	margin: 0;
+	color: var(--color-second);
+	font-size: 0.875rem;
+	line-height: 0.875rem;
+	letter-spacing: -0.02625rem;
+}
+
+/* FOOTER */
+
+.footer-main {
+	padding: 1.25rem;
+	background-color: var(--color-accent);
+}
+
+.flex-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer--github-link {
+	display: flex;
+	gap: 0.675rem;
+	align-items: center;
+	color: var(--color-light);
+	text-decoration: none;
+}
+
+.footer--github-link span {
+	color: var(--color-light);
+}
+
+.footer--year {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--color-light);
+}
+
+.footer--rss-link {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+}
+
+.col-f-33 {
+	width: 33%;
+}
+
+/* Add */
+
+:not(pre)>code[class*=language-],pre[class*=language-] {
+	border-radius: 15px;
+}
