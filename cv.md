@@ -3,9 +3,7 @@
 
 ## Contacts
 
-* __Location:__ Novi Sad, Serbia
-* __Phone:__ 0613066391
-* __Email:__ webvakula@gmail.com
+* __Discord:__ Serg (@sergdekas)
 * __GitHub:__ [sergdekas](https://github.com/sergdekas)
 
 ## About Me
