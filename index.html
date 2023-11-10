@@ -35,30 +35,33 @@
 	</header>
 
 	<main>
-		<div class="container">
-			<section class="hero">
+		<section class="hero">
+			<div class="container">
 				<div class="flex-wrapper-reverse">
 					<div class="hero-text">
 						<h1 class="hero-title">Sergei Kasianov</h1>
 						<p class="hero-subtitle">Frontend Web&nbsp;Developer</p>
-						<a href="https://github.com/sergdekas" class="btn">Visit my GitHub</a>
+						<a href="https://github.com/sergdekas" class="btn"><img src="assets/images/github-white.svg" alt="github logo" width="16" height="16"><span>Visit my GitHub</span></a>
 					</div>
 					<div class="image">
 						<img src="assets/images/photo_410.png" alt="photo Sergei">
 					</div>
 				</div>
-			</section>
+
+			</div>
+		</section>
+		<div class="container">
 
 
 			<section class="about-me" id="about-me">
-				<h2>About Me</h2>
+				<h2 class="section-title">About Me</h2>
 					<p>I am an HTML coder and a beginner front-end developer. I do (specialize in) web page layout for static sites, landing pages, layout for CMS with subsequent landing, and I also do HTML layout of e-mail letters.</p>
 					<p>I love beautiful and lightweight websites with a clean and minimalistic design, smart and responsive JS animation, created in compliance with the rules of semantic layout.</p>
 					<p>I appreciate thoughtful and user-friendly sites, with good UX design, sites that are useful for users.</p>
 			</section>
 
 			<section class="contacts" id="contacts">
-				<h2>Contacts</h2>
+				<h2 class="section-title">Contacts</h2>
 					<ul>
 						<li><b>Email:</b> webvakula@gmail.com</li>
 						<li><b>Telegram:</b> @sergdekas</li>
@@ -67,7 +70,7 @@
 			</section>
 
 			<section class="skills" id="skills">
-				<h2>Skills</h2>
+				<h2 class="section-title">Skills</h2>
 					<ul class="skills-list">
 						<li>HTML</li>
 						<li>CSS</li>
@@ -81,39 +84,40 @@
 			</section>
 			
 			<section class="code">
-				<h2>Code Example</h2>
+				<h2 class="section-title">Code Example</h2>
 					<pre class="line-numbers"><code class="language-javascript" data-prismjs-copy="Сopy me"
 					data-prismjs-copy-success="I've been copied!" >
-function sayHi() {
-	alert("Hello, World!");
-}
-
 function multiply(a, b) {
   return a * b;
+}
+
+function evenOrOdd(number) {
+  return number % 2 === 0 ? "Even" : "Odd";
 }
 						</code></pre>
 			</section>
 
 			<section class="education">
-				<h2>Education</h2>
+				<h2 class="section-title">Education</h2>
 					<ul>
 						<li class="education-item__group"><b>University:</b> Perm National Research Polytechnic University, Civil Engineering Faculty, Civil Engineering major</li>
 						<li class="education-item__group"><b>Courses:</b>
 								<ul class="education-list__second">
-									<li><a href="https://www.htmlacademy.ru" rel="nofollow, noindex"> HTML Academy: front-end developer ↗︎</a> — in the learning process</li>
-									<li><a href="https://code-basics.com/ru/languages/php" rel="nofollow, noindex"> Code-Basics by Hexlet: PHP (Basics) ↗︎</a></li>
-									<li><a href="https://code-basics.com/ru/languages/html" rel="nofollow, noindex"> Code-Basics by Hexlet: HTML ↗︎</a></li>
-									<li><a href="https://code-basics.com/ru/languages/css" rel="nofollow, noindex"> Code-Basics by Hexlet: CSS ↗︎</a></li>
-									<li><a href="https://ru.hexlet.io/courses/layout-designer-basics" rel="nofollow, noindex"> Hexlet: Basics of modern layout designer ↗︎</a></li>
-									<li><a href="https://ru.hexlet.io/courses/intro_to_git" rel="nofollow, noindex"> Hexlet: Introduction to Git ↗︎</a></li>
-									<li><a href="https://ru.hexlet.io/courses/cli-basics" rel="nofollow, noindex"> Hexlet: Command line basics ↗︎</a></li>
+									<li><a href="https://www.htmlacademy.ru" rel="nofollow, noindex"> HTML Academy: front-end developer&nbsp;↗︎</a> — in&nbsp;the learning process</li>
+									<li><a href="https://rs.school/js-stage0/" rel="nofollow, noindex"> The Rolling Scopes School: «JavaScript/Front-end PRE-School 2023Q2»&nbsp;↗︎</a></li>
+									<li><a href="https://code-basics.com/ru/languages/php" rel="nofollow, noindex"> Code-Basics by Hexlet: PHP (Basics)&nbsp;↗︎</a></li>
+									<li><a href="https://code-basics.com/ru/languages/html" rel="nofollow, noindex"> Code-Basics by Hexlet: HTML&nbsp;↗︎</a></li>
+									<li><a href="https://code-basics.com/ru/languages/css" rel="nofollow, noindex"> Code-Basics by Hexlet: CSS&nbsp;↗︎</a></li>
+									<li><a href="https://ru.hexlet.io/courses/layout-designer-basics" rel="nofollow, noindex"> Hexlet: Basics of modern layout designer&nbsp;↗︎</a></li>
+									<li><a href="https://ru.hexlet.io/courses/intro_to_git" rel="nofollow, noindex"> Hexlet: Introduction to Git&nbsp;↗︎</a></li>
+									<li><a href="https://ru.hexlet.io/courses/cli-basics" rel="nofollow, noindex"> Hexlet: Command line basics&nbsp;↗︎</a></li>
 								</ul>
 						</li>
 					</ul>
 			</section>
 
 			<section class="languages">
-				<h2>Languages</h2>
+				<h2 class="section-title">Languages</h2>
 					<ul>
 						<li>English: A2 (Pre-Intermediate)</li>
 						<li>Russian: Native</li>
@@ -122,7 +126,7 @@ function multiply(a, b) {
 			</section>
 
 			<section class="projects">
-				<h2>Projects</h2>
+				<h2 class="section-title">Projects</h2>
 				<a href="https://sergdekas.github.io/rsschool-cv/" class="project-item--link">
 					<div class="project-item">
 						<div class="project-text">
