@@ -28,8 +28,8 @@ I appreciate thoughtful and user-friendly sites, with good UX design, sites that
 ## Code Example
 
 ```
-function sayHi() {
-	alert("Hello, World!")
+function evenOrOdd(number) {
+  return number % 2 === 0 ? "Even" : "Odd";
 }
 ```
 
@@ -40,6 +40,7 @@ function sayHi() {
 * __University:__ Perm National Research Polytechnic University, Civil Engineering Faculty, Civil Engineering major
 * __Courses:__ 
   + [HTML Academy: front-end developer](https://www.htmlacademy.ru) - in the learning process
+  + [The Rolling Scopes School: «JavaScript/Front-end PRE-School 2023Q2» ](https://rs.school/js-stage0/)
   + [Hexlet. Code-Basics: PHP (Basics)](https://code-basics.com/ru/languages/php)
   + [Hexlet. Code-Basics: HTML](https://code-basics.com/ru/languages/html)
   + [Hexlet. Code-Basics: CSS](https://code-basics.com/ru/languages/css)
