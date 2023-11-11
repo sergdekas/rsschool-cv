@@ -2,7 +2,6 @@
 
 __Junior Frontend Developer__
 
-====
 
 ## Contacts
 
@@ -51,9 +50,9 @@ function evenOrOdd(number) {
 
 * __Courses:__ 
   + [HTML Academy: front-end developer](https://www.htmlacademy.ru) - in the learning process
-  + [Linux Foundations](https://killercoda.com/pawelpiwosz/course/linuxFundamentals) - in the learning process
-  + [The Rolling Scopes School: «JavaScript/Front-end 2023Q4. Stage 1»](https://rs.school/js-stage0/) - in the learning process
-  + [JavaScript Manual on learnjavascript.ru](https://learn.javascript.ru/) - in progress
+  + [Linux Foundations](https://killercoda.com/pawelpiwosz/course/linuxFundamentals) - in progress
+  + [The Rolling Scopes School: «JavaScript/Front-end 2023Q4. Stage 1»](https://rs.school/js-stage0/) - in progress
+  + [JavaScript Manual on learn.javascript.ru](https://learn.javascript.ru/) - in progress
   + [The Rolling Scopes School: «JavaScript/Front-end PRE-School 2023Q2»](https://rs.school/js/)
   + [Hexlet. Code-Basics: PHP (Basics)](https://code-basics.com/ru/languages/php)
   + [Hexlet. Code-Basics: HTML](https://code-basics.com/ru/languages/html)
