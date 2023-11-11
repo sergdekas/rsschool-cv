@@ -1,15 +1,16 @@
 # Sergei Kasianov
 
-### Junior Frontend Developer
+__Junior Frontend Developer__
 
+====
 
-### Contacts
+## Contacts
 
 * __Discord:__ Serg (@sergdekas)
 * __GitHub:__ [sergdekas](https://github.com/sergdekas)
 
 
-### About Me
+## About Me
 
 I am an HTML coder and a junior front-end developer. I do (specialize at the moment) web page layout for static sites, landing pages, layout for CMS with further integration, and I also do HTML layout of e-mails.
 
@@ -18,23 +19,23 @@ I love beautiful and lightweight websites with a clean and minimalistic design, 
 I appreciate well-thought-out and user-friendly sites, with good UX design, sites that are useful for users.
 
 
-### Skills
+## Skills
 
 * HTML
 * CSS
 * BEM
-* JavaScript (Foundationss)
-* NodeJS (Basic)
-* PHP (Basic)
+* JavaScript Foundations
+* NodeJS _Basic_
+* PHP _Basic_
 * Git, GitHub
 * Linux, WSL, Bash
 * VS Code, Sublime Text
 * Figma, Photoshop, Illustrator
 
 
-### Code Example
+## Code Example
 
-Some KATA from CODEWARS: Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+__Some KATA from CODEWARS:__ _Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers._
 
 
 ```
@@ -44,14 +45,16 @@ function evenOrOdd(number) {
 ```
 
 
-### Education
+## Education
 
 * __University:__ Perm National Research Polytechnic University, Civil Engineering Faculty, Civil Engineering major 
 
 * __Courses:__ 
   + [HTML Academy: front-end developer](https://www.htmlacademy.ru) - in the learning process
   + [Linux Foundations](https://killercoda.com/pawelpiwosz/course/linuxFundamentals) - in the learning process
-  + [The Rolling Scopes School: «JavaScript/Front-end PRE-School 2023Q2» ](https://rs.school/js-stage0/)
+  + [The Rolling Scopes School: «JavaScript/Front-end 2023Q4. Stage 1»](https://rs.school/js-stage0/) - in the learning process
+  + [JavaScript Manual on learnjavascript.ru](https://learn.javascript.ru/) - in progress
+  + [The Rolling Scopes School: «JavaScript/Front-end PRE-School 2023Q2»](https://rs.school/js/)
   + [Hexlet. Code-Basics: PHP (Basics)](https://code-basics.com/ru/languages/php)
   + [Hexlet. Code-Basics: HTML](https://code-basics.com/ru/languages/html)
   + [Hexlet. Code-Basics: CSS](https://code-basics.com/ru/languages/css)
@@ -61,7 +64,7 @@ function evenOrOdd(number) {
   + [Hexlet: Introduction to programming](https://ru.hexlet.io/courses/introduction_to_programming)
 
 
-### Languages:
+## Languages:
 
 * English: A2 (Pre-Intermediate)
 * Russian: Native
