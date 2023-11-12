@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kasianov Sergei | RS School CV</title>
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="header-inner">
+				<nav class="nav">
+					<div class="nav-button-wrap nav-button nav-link" role="button"><span>Menu</span></div>
+					<ul class="nav-items nav-items-vert hidden">
+						<li class="nav-item"><a class="nav-link" href="#about-me">About</a></li>
+						<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+						<li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+						<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+						<li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="container">
+			<div class="header-titles">
+				<h1>Sergei Kasianov</h1>
+				<p class="header-subtitle"><strong>Frontend Developer</strong></p>
+			</div>
+			<hr>
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+			<!-- CONTACTS -->
+			<h2 id="contacts">Contacts</h2>
+			<ul>
+				<li><strong>Discord:</strong> Serg (@sergdekas)</li>
+				<li><strong>GitHub:</strong> <a href="https://github.com/sergdekas">sergdekas</a></li>
+			</ul>
+			<!-- ABOUT -->
+			<h2 id="about-me">About Me</h2>
+			<p>I am an HTML coder and a junior front-end developer. I do (specialize at the moment) web page layout for static sites, landing pages, layout for CMS with further integration, and I also do HTML layout of e-mails.</p>
+			<p>I love beautiful and lightweight websites with a clean and minimalistic design, smart and responsive JS animation, created in compliance with the rules of semantic layout.</p>
+			<p>I appreciate well-thought-out and user-friendly sites, with good UX design, sites that are useful for users.</p>
+			<!-- SKILLS -->
+			<h2 id="skills">Skills</h2>
+			<ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>BEM</li>
+				<li>JavaScript Foundations</li>
+				<li>NodeJS <em>Basic</em></li>
+				<li>PHP <em>Basic</em></li>
+				<li>Git, GitHub</li>
+				<li>Linux, WSL, Bash</li>
+				<li>VS Code, Sublime Text</li>
+				<li>Figma, Photoshop, Illustrator</li>
+			</ul>
+			<!-- CODE -->
+			<h2 id="code-example">Code Example</h2>
+			<p><strong>Some KATA from CODEWARS:</strong> <em>Create a function that takes an integer as an argument and returns “Even” for even numbers or “Odd” for odd numbers.</em></p>
+			
+			<div class="highlighter-wrap">
+				<div class="highlight">
+					<pre class="highlight">
+						<code>
+function evenOrOdd(number) {
+  return number % 2 === 0 ? "Even" : "Odd";
+}</code>
+					</pre>
+				</div>
+			</div>
+			<!-- EDUCATION -->
+			<h2 id="education">Education / Courses</h2>
+			<ul>
+				<li>
+					<p><strong>University:</strong> Perm National Research Polytechnic University, Civil Engineering Faculty, Civil Engineering major</p>
+				</li>
+				<li>
+					<p><strong>Courses:</strong></p>
+					<ul>
+						<li><a href="https://www.htmlacademy.ru">HTML Academy: front-end developer</a> - in the learning process</li>
+						<li><a href="https://killercoda.com/pawelpiwosz/course/linuxFundamentals">Linux Foundations</a> - in progress</li>
+						<li><a href="https://rs.school/js-stage0/">The Rolling Scopes School: «JavaScript/Front-end 2023Q4. Stage 1»</a> - in progress</li>
+						<li><a href="https://learn.javascript.ru/">JavaScript Manual on learn.javascript.ru</a> - in progress</li>
+						<li><a href="https://rs.school/js/">The Rolling Scopes School: «JavaScript/Front-end PRE-School 2023Q2»</a></li>
+						<li><a href="https://code-basics.com/ru/languages/php">Hexlet. Code-Basics: PHP (Basics)</a></li>
+						<li><a href="https://code-basics.com/ru/languages/html">Hexlet. Code-Basics: HTML</a></li>
+						<li><a href="https://code-basics.com/ru/languages/css">Hexlet. Code-Basics: CSS</a></li>
+						<li><a href="https://ru.hexlet.io/courses/layout-designer-basics">Hexlet: Basics of modern layout designer</a></li>
+						<li><a href="https://ru.hexlet.io/courses/intro_to_git">Hexlet: Introduction to Git</a></li>
+						<li><a href="https://ru.hexlet.io/courses/cli-basics">Hexlet: Command line basics</a></li>
+						<li><a href="https://ru.hexlet.io/courses/introduction_to_programming">Hexlet: Introduction to programming</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- LANGUAGES -->
+			<h2 id="languages">Languages</h2>
+			<ul>
+				<li>English: A2 (Pre-Intermediate)</li>
+				<li>Russian: Native</li>
+				<li>Serbian: Basic</li>
+			</ul>
+			<!-- PROJECTS -->
+			<h2 id="projects">Projects</h2>
+			<ul>
+				<li><a href="https://sergdekas.github.io/rsschool-cv/">CV HTML Page</a></li>
+			</ul>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<hr>
+			<ul class="footer-items">
+				<li>© 2023</li>
+				<li>
+					<a class="footer-link" href="https://github.com/sergdekas">sergdekas</a>
+				</li>
+				<li>
+					<a class="footer-link" href="https://rs.school/js/">RS School</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<script>
+		document.querySelector(".nav-button").addEventListener('click', () => {
+			document.querySelector(".nav-items-vert").classList.toggle("hidden");
+			document.querySelector(".nav-items-vert").classList.toggle("active");
+		});
+		document.querySelector(".nav-items-vert").addEventListener('click', (e) => {
+			if (e.target.children = "nav-link") {
+				document.querySelector(".nav-items-vert").classList.toggle("hidden");
+				document.querySelector(".nav-items-vert").classList.toggle("active");
+			}
+		});
+	</script>
+</body>
+</html>
