@@ -4,7 +4,7 @@
 	--color-bg: #f9f7f1;
 	--color-bg-header: #2e2e2e;
 	--color-text: #71656c;
-	--color-text-hover: #a88a9c;
+	--color-text-hover: #a9889b;
 }
 
 * {
@@ -19,7 +19,7 @@ body {
 }
 
 ul {
-	/* padding: 0; */
+	padding: 0;
 }
 
 li {
@@ -149,7 +149,7 @@ hr {
 	.nav-button {
 		display: block;
 	}
-	
+
 	.nav-items {
 		display: none;
 	}
@@ -159,7 +159,7 @@ hr {
 		flex-direction: column;
 		row-gap: 1rem;
 		align-items: center;
-		
+
 		animation-duration: .6s;
 		animation-name: hidden-menu;
 		animation-fill-mode: forwards;
@@ -187,11 +187,11 @@ hr {
 			visibility: hidden;
 			transform: translateY(-50%);
 		}
-		
+
 		50% {
 			opacity: 0;
 		}
-		
+
 		to {
 			padding-top: 0.75rem;
 			padding-bottom: 0.75rem;
@@ -210,11 +210,11 @@ hr {
 			height: 208px;
 			visibility: visible;
 		}
-		
+
 		30% {
 			opacity: 0;
 		}
-		
+
 		to {
 			height: 0;
 			padding-top: 0;
