@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
 	--color-bg: #f9f8f6;
 	--color-dark: #252525;
 	--color-accent: #ff5f56;
 	--color-light: #fafafa;
+	--color-gray: #cac5c5;
 
-	--font-main: "Futura Md BT", sans-serif;
+	--font-main: "Jost", sans-serif;
 }
 
 html {
@@ -130,6 +133,7 @@ img {
 	text-align: center;
 	font-size: 3.75rem;
 	line-height: 1;
+	font-weight: 700;
 	letter-spacing: -0.03em;
 }
 
@@ -140,7 +144,7 @@ img {
 	text-align: center;
 	font-size: 1.5rem;
 	line-height: 1;
-	color: #cac5c5;
+	color: var(--color-gray);
 	letter-spacing: -0.02em;
 }
 
@@ -151,7 +155,7 @@ img {
 	background-color: var(--color-dark);
 	line-height: 1.1;
 	border-radius: 100px;
-	transition: background-color 0.3s;
+	transition: all 0.5s;
 }
 
 .btn-github-link:hover {
