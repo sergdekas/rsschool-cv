@@ -1,3 +1,12 @@
+:root {
+	--color-bg: #f9f8f6;
+	--color-dark: #252525;
+	--color-accent: #ff5f56;
+	--color-light: #fafafa;
+
+	--font-main: "Futura Md BT", sans-serif;
+}
+
 html {
 	box-sizing: border-box;
 }
@@ -6,4 +15,298 @@ html {
 *::before,
 *::after {
 	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: var(--font-main);
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.5;
+	color: var(--color-dark);
+	background-color: var(--color-bg);
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+a {
+	color: inherit;
+}
+
+img {
+	display: block;
+}
+
+.container {
+	width: 100%;
+	max-width: 1204px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.hidden {
+	display: none;
+}
+
+/* Header */
+
+.header {
+	padding: 50px 0;
+}
+.main-nav-list {
+	display: flex;
+	align-items: center;
+	gap: 3.75rem;
+}
+
+.main-nav {
+	padding: 0.5rem 0;
+}
+
+.main-nav-link {
+	min-height: 2rem;
+	/* font-size: 1.125rem; */
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.main-nav-link:hover {
+	color: var(--color-accent);
+}
+
+@media (width < 760px) {
+
+	.flex {
+		align-items: flex-start;
+	}
+
+	.main-nav-list {
+		flex-direction: column;
+		align-items: flex-end;
+		gap: 2rem;
+	}
+}
+
+
+/* Hero Section */
+
+.section-hero {
+	padding: 56px 0 88px;
+}
+
+.section-hero-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.avatar {
+	margin-bottom: 0.5rem;
+	background-image: url(assets/images/avatar-cat.jpg);
+	background-repeat: no-repeat;
+	background-position: 60% center;
+	background-size: cover;
+	width: 92px;
+	height: 92px;
+	border-radius: 50%;
+	filter: grayscale(1);
+}
+
+.main-title {
+	margin: 1rem 0;
+	text-align: center;
+	font-size: 3.75rem;
+	line-height: 1;
+	letter-spacing: -0.03em;
+}
+
+.main-subtitle {
+	margin: 0;
+	margin-top: 0.25rem;
+	margin-bottom: 1.75rem;
+	text-align: center;
+	font-size: 1.5rem;
+	line-height: 1;
+	color: #cac5c5;
+	letter-spacing: -0.02em;
+}
+
+.btn-github-link {
+	padding: 1rem 1.5rem;
+	text-decoration: none;
+	color: var(--color-bg);
+	background-color: var(--color-dark);
+	line-height: 1.1;
+	border-radius: 100px;
+	transition: background-color 0.3s;
+}
+
+.btn-github-link:hover {
+	background-color: var(--color-accent);
+}
+
+/* Sections */
+
+.section {
+	padding: 120px 0;
+}
+
+.section-inner {
+	position: relative;
+	min-width: 360px;
+	max-width: 738px;
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	align-items: baseline;
+	gap: 2rem;
+}
+
+.section-inner::after {
+	position: absolute;
+	content: '';
+	left: 0;
+	right: 0;
+	bottom: -120px;
+	width: 100%;
+	height: 1px;
+	background-color: rgba(143, 132, 128, 0.1);
+}
+
+.section-title {
+	margin: 0;
+	font-family: var(--font-main);
+	font-weight: 500;
+	font-style: normal;
+	color: var(--color-accent);
+	letter-spacing: -0.02em;
+	font-size: 1.5rem;
+	line-height: 1;
+}
+
+.section-text {
+	margin: 0;
+}
+
+.section-text:not(:first-child) {
+	margin-top: 1rem;
+}
+
+.section-text-bold {
+	display: inline-block;
+	margin-bottom: 0.25rem;
+	width: 100%;
+}
+
+/* Skills */
+
+.skills-list {
+	max-width: 300px;
+	padding-bottom: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.skills-item {
+	padding: 2px 10px;
+	display: inline-block;
+	line-height: 1.6;
+	color: var(--color-bg);
+	background-color: var(--color-dark);
+	border-radius: 4px;
+}
+
+
+.code-example {
+	padding: 0 2rem;
+	background-color: rgba(202, 197, 197, 0.2);
+	border-radius: 1rem;
+}
+
+.code-example pre {
+	overflow: auto;
+	font-size: 1rem;
+}
+
+/* Projects */
+
+.projects-link {
+	line-height: 1.6;
+	transition: color 0.2s;
+	text-decoration-line: underline;
+	text-decoration-skip-ink: none;
+	text-decoration-thickness: 0.1rem;
+	text-underline-offset: 0.3rem;
+
+	display: flex;
+	column-gap: 0.4rem;
+}
+
+.projects-link:hover {
+	color: var(--color-accent);
+}
+
+/* Education */
+
+.courses-item:not(:first-child) {
+	margin-top: 0.25rem;
+}
+
+.courses-link {
+	line-height: 1.6;
+	transition: color 0.2s;
+	text-decoration-line: underline;
+	text-decoration-skip-ink: none;
+	text-decoration-thickness: 0.1rem;
+	text-underline-offset: 0.25rem;
+}
+
+.courses-link:hover {
+	color: var(--color-accent);
+}
+
+.courses-item i {
+	font-size: 1rem;
+	opacity: 0.5;
+}
+
+
+/* Footer */
+
+.footer {
+	padding: 1rem 0;
+	font-size: 0.875rem;
+	line-height: 1;
+	color: var(--color-light);
+	background-color: var(--color-dark);
+}
+
+.footer-github-link {
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	column-gap: 0.5rem;
+}
+
+.footer-github-link svg path {
+	fill: var(--color-light);
+	transition: fill 0.2s;
+}
+
+.footer-github-link:hover svg path {
+	fill: var(--color-accent);
 }
