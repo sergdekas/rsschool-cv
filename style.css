@@ -160,6 +160,8 @@ img {
 
 .btn-github-link:hover {
 	background-color: var(--color-accent);
+	transform: translateY(-0.2rem);
+	box-shadow: 0 8px 15px rgba(34, 46, 80, 0.05);
 }
 
 /* Sections */
