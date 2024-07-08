@@ -236,14 +236,15 @@ img {
 }
 
 .code-example {
-	padding: 0 2rem;
+	padding: 0 1rem 0 1.5rem;
 	background-color: rgba(202, 197, 197, 0.2);
 	border-radius: 1rem;
 }
 
 .code-example pre {
-	overflow: auto;
 	font-size: 1rem;
+	white-space: pre-wrap;
+	word-wrap: break-word;
 }
 
 /* Projects */
