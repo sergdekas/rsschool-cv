@@ -489,6 +489,54 @@ img {
 	transition: fill 0.2s;
 }
 
+.btn-to-top {
+	display: none;
+	position: fixed;
+	width: 56px;
+	height: 56px;
+	right: 72px;
+	bottom: 88px;
+	border-radius: 100px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.btn-to-top.btn-to-top--active {
+	display: block;
+}
+
+@media (width <= 768px) {
+	.btn-to-top {
+		right: 32px;
+	}
+}
+
+@media (width <= 540px) {
+	.btn-to-top {
+		right: 24px;
+	}
+}
+
+.btn-to-top svg path:first-child {
+	fill: var(--color-dark);
+	transition: all 0.3s;
+}
+
+.btn-to-top svg path:last-child {
+	stroke: var(--color-bg);
+}
+
+@media (hover: hover) {
+
+	.btn-to-top:hover svg path:first-child {
+		fill: var(--color-accent);
+	}
+
+	.btn-to-top:hover svg path:last-child {
+		stroke: var(--color-bg);
+	}
+}
+
 @media (hover: hover) {
 
 	.footer-github-link:hover svg path {
