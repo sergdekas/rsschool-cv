@@ -7,7 +7,7 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="body">
 	<div class="wrapper">
 		<!-- Header -->
 		<header class="header">
@@ -33,7 +33,11 @@
 					</ul>
 				</nav>
 				<!-- Button Mobile Navigation -->
-				<button class="btn-mobile-nav" style="display: none;"></button>
+				<button class="btn-mobile-nav">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
 			</div>
 		</header>
 		<!-- Main -->
@@ -45,7 +49,8 @@
 						<div class="avatar" id="contacts"></div>
 						<h1 class="main-title">Sergei Kasianov</h1>
 						<p class="main-subtitle">Front-end Developer</p>
-						<a class="btn-github-link" href="https://github.com/sergdekas" target="_blank">View GitHub
+						<a class="btn-github-link" href="https://github.com/sergdekas" target="_blank">
+							<span>View GitHub</span>
 							<span>
 								<svg class="icon icon-button-arrow" width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M9.33716 3.345L2.16466 10.5175L0.986328 9.33917L8.15799 2.16667H1.83716V0.5H11.0038V9.66667H9.33716V3.345Z" fill="currentColor"></path>
@@ -60,9 +65,9 @@
 				<div class="container section-inner">
 					<h2 class="section-title">About</h2>
 					<div class="section-content">
-						<p>I'm a junior front-end developer. At the moment I specialize in responsive website layout, landing pages, layout for CMS with further integration, as well as HTML email layout.</p>
-						<p>I love beautiful and lightweight websites with clean and minimalistic design, smart and responsive JS animation, created in compliance with the rules of semantic layout.</p>
-						<p>I appreciate well-thought-out and user-friendly sites, with good UX design, that are useful for users.</p>
+						<p>I'm a front-end developer. At&nbsp;the&nbsp;moment I&nbsp;specialize in&nbsp;responsive website layout, landing pages, layout for&nbsp;CMS with further integration, as&nbsp;well&nbsp;as&nbsp;HTML email layout.</p>
+						<p>I love beautiful and lightweight websites with clean and minimalistic design, smart and responsive JS&nbsp;animation, created in&nbsp;compliance with the rules of&nbsp;semantic layout.</p>
+						<p>I appreciate well-thought-out and user-friendly sites, with good&nbsp;UX&nbsp;design, that are useful for&nbsp;users.</p>
 					</div>
 				</div>
 			</div>
@@ -196,21 +201,62 @@
 				</div>
 			</div>
 		</main>
+		<!-- Footer -->
 		<footer class="footer">
 			<div class="container flex">
 				<a class="footer-rsschool-link" href="https://rs.school/courses/javascript-ru">
-					<img class="footer-rsschool-logo" src="assets/images/rs_school_logo-white.svg" alt="Rolling Scopes School Logo">
+					<img class="footer-rsschool-logo" src="assets/images/rs_school_logo-white.svg" alt="The Rolling Scopes School Logo">
 				</a>
 				<span class="footer-year">2024</span>
 				<a class="footer-github-link" href="https://github.com/sergdekas">
 					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(2)" fill="#252525"/>
 					</svg>
-					<span class="hidden">sergdekas</span>
+					<span class="visually-hidden">View GitHub</span>
 				</a>
 			</div>
-			<!-- Footer -->
+			<!-- Button To Top -->
+			<div class="btn-to-top">
+				<svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill="#fff" d="M0 0h24v24H0z"/>
+					<path d="m7 14.5 5-5 5 5" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</div>
 		</footer>
 	</div>
+
+	<script>
+		(() => {
+			const body = document.querySelector("body");
+			const menu = document.querySelector(".main-nav");
+			const btn = document.querySelector(".btn-mobile-nav");
+			const navLinks = document.querySelectorAll(".main-nav-link");
+			const btnToTop = document.querySelector(".btn-to-top");
+			const showMenu = () => {
+				body.classList.toggle("stop-scrolling");
+				menu.classList.toggle("main-nav--open");
+				btn.classList.toggle("btn-mobile-nav--active");
+			}
+			btn.addEventListener("click", showMenu);
+
+			navLinks.forEach(link => {
+				link.addEventListener("click", showMenu)
+			});
+
+			window.onscroll = () => {showScrollBtn()};
+			const showScrollBtn = () => {
+				if (body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
+					btnToTop.classList.add("btn-to-top--active");
+				} else {
+					btnToTop.classList.remove("btn-to-top--active");
+				}
+			}
+			const scrollToTop = () => {
+				body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+			btnToTop.addEventListener("click", scrollToTop);
+		})();
+	</script>
 </body>
 </html>
